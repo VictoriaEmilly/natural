@@ -1,0 +1,141 @@
+
+.catalogo-texto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.catalogo-texto h1{
+    font-size: 1em;
+    font-weight: 300;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.catalogo-texto p{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 18pt;
+    color: #4f4f4f;
+    font-weight: 300;
+    width: 45%;
+    text-align: left;
+}
+
+.catalogo h2{
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.catalogo h3{
+    font-size: 12pt;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 14pt;
+    color: #4f4f4f;
+    font-weight: 300;
+}
+
+.catalogo img{
+    width: 320px;
+    height: 240px;
+}
+
+.catalogo img:hover{
+    filter:opacity(0.7);
+}
+
+.icone img{
+    width: 24px;
+    height: auto;
+    display: block;
+    float: right;
+}
+
+.favoritar img{
+    width: 24px;
+    height: auto;
+    display: block;
+    float: right;
+}
+
+
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+
+.catalogo a{
+    display: block;
+    float: right;
+    font-size: 0.5em;
+    padding: 10px;
+    display: none;
+    background: #5e7353;
+    width: 180px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.catalogo a:hover{
+        background:#6baa73;
+}
+
+.catalogo > div{
+    margin: 20px 10px;
+    position: relative;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+
+    .principal h1{
+        font-size: 0.9em;
+    }
+    .principal p{
+        font-size: 0.7em;
+    }
+
+    .catalogo h2{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:320px) and (max-width:600px) {
+
+    .principal{
+        margin-top: 100px;
+        font-size: 18px;
+    }
+
+    .catalogo img{
+        width: 124px;
+        height: auto;
+    }
+
+    .catalogo a{
+        width: 72px;
+    }
+    .catalogo h3{
+        font-size: 0.8em;
+    }
+
+    .favoritar img{
+        width: 16px;
+    }
+}
