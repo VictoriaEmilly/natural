@@ -456,14 +456,11 @@ body {
 	padding-bottom: 15px;
 }
 
-.rodape a{
-	text-decoration: none;
-}
-
 .rodape p {
 	text-align: center;
 	font-size: 0.5em;
 	padding: 0;
+	text-decoration: none;
 }
 .redes {
 	width: auto;
