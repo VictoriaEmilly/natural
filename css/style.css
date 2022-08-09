@@ -95,6 +95,10 @@ body {
 	color: #556b2f;
 }
 
+.menu a:hover{
+	color: black;
+}
+
 .usuario-compra {
 	display: flex;
 	gap: 10px;
