@@ -285,7 +285,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 0.6em;
+	font-size: 0.7em;
 	width: 30%;
 	margin: 0;
 	padding: 20px 5px;
@@ -648,7 +648,7 @@ body {
 @media (min-width:320px) and (max-width:600px) {
 
 	body {
-		font-size: 20px;
+		font-size: 23px;
 	}
 
 	.header-logo {
@@ -671,7 +671,7 @@ body {
 	}
 
 	.usuario-compra img{
-		width: 16px;
+		width: 18px;
 	}
 
 	.header-main{
@@ -723,7 +723,7 @@ body {
 	}
 
 	.header-logo img {
-		width: 16px;
+		width: 18px;
 	}
 
 	.usuario-compra {
@@ -782,6 +782,10 @@ body {
 	.sessao4 h4 {
 		font-size: 1em;
 	}
+	
+	.sessao4 p{
+		margin:0 5px;
+	}
 
 	.btn-index-catalogo {
 		width: 160px;
@@ -795,7 +799,7 @@ body {
 		flex-direction: column;
 	}
 
-	.rodape>div {
+	.rodape div, .rodape section {
 		width: 100%;
 
 	}
@@ -814,6 +818,8 @@ body {
 		display: flex;
 		flex-direction: row;
 		gap: 10px;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.redes img {
