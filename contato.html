@@ -46,15 +46,16 @@
     </header>
 
     <main class="principal">
-        <div id="imagem-principal"><img src="imagens/contato/img.jpg"></div>
+        <div id="imagem-principal"><img src="imagens/contato/img.jpg" alt="mulheres cuidando da pele"></div>
         <form class="formulario">
-            <h1>Mande a sua mensagem</h1>
+           <legend><h1>Mande a sua mensagem</h1></legend> 
             <input type="text" name="tNome" id="cNome" placeholder="Nome completo">
+            <label for="cNome"></label>
             <input type="email" name="tMail" id="cMail" placeholder="E-mail">
-            <textarea name="tMsg" id="cMsg" cols="45" rows="5"  placeholder="Digite aqui sua mensagem"></textarea>
-            <div class="botao">
-                <a href="" class="submit">Enviar</a>
-            </div>
+            <label for="cMail"></label>
+            <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Digite aqui sua mensagem"></textarea>
+            <label for="cMsg"></label>
+            <input type="submit" class="submit-btn" value="Enviar"></input>
         </form>
     </main>
 
@@ -62,18 +63,16 @@
         <div class="sobre-empresa">
             <h5>Natural Cosméticos Ltda </h5>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
             </p>
         </div>
         <div>
-        <p>
             <h5>Contato e Informações</h5>
             <p> Lorem Ipsum dolor sit email naturalhelp@gmail.com ou pelo telefone: (01) 2345-6789</p>
-           
+
         </div>
         <div class="sobre-mim">
-            <p>
             <h5>Projeto por Victoria Santos</h5>
             <div class="redes">
                 <a href="http://instagram.com/vick_emilly" target="_blank"> <img src="imagens/contato/instagram.png">
@@ -85,7 +84,7 @@
             </p>
         </div>
     </footer>
-        <script src="./javascript/mobile-nav.js"> </script>
+    <script src="./javascript/mobile-nav.js"> </script>
 </body>
 
 </html>

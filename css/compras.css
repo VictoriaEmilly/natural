@@ -29,7 +29,6 @@
     border-radius: 20px;
     text-align: center;
     margin-bottom: 30px
- 
 }
 
 .principal a{
@@ -76,10 +75,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width:320px) and (max-width: 600px) {
     .botao-sac{
         width: 120px;
-        height: 30px;
+        height: 35px;
     }
 
     #btn-login p{

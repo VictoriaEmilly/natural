@@ -37,7 +37,7 @@
 	justify-content: center;
 }
 
-input,
+input[type=email],input[type=password],
 textarea {
 	font-family: sans-serif;
 	font-weight: normal;
@@ -48,36 +48,23 @@ textarea {
 	border-radius: 5px;
 	text-align: left;
 	color: black;
-}
-
-input {
+	width: 100%;
 	padding: 10px;
 }
 
-textarea,
-input {
-	width: 100%;
-}
-
-input:focus,
+input[type=email]:focus,input[type=password]:focus,
 textarea:focus {
 	outline: 0;
 }
 
-input:hover,
+input[type=email]:hover, input[type=password]:hover,
 textarea:hover {
 	background-color: #fac9c56e;
 	border: 1px solid #FF88A5;
 	border-radius: 5px;
 }
 
-.botao {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.submit {
+input[type=submit] {
 	padding: 15px;
 	display: inline-flex;
 	background: #5e7353;
@@ -93,11 +80,25 @@ textarea:hover {
 }
 
 
-.submit:hover {
-	background: #6baa73;
-	transition: all 0.6s ease;
+input[type=submit] {
+    display: flex;
+    background: #5e7353;
+    width: 100px;
+    height: 50px;
+    color: white;
+    border-radius: 20px;
+    border: 0 none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+	padding: 0;
 }
 
+
+input[type=submit]:hover {
+    background: #6baa73;
+    transition: all 0.6s ease;
+}
 
 @media screen and (max-width:920px) {
 
@@ -108,5 +109,11 @@ textarea:hover {
 	.formulario u {
 		font-size: 0.7em;
 	}
+
+	input[type=submit]{
+		font-size: 0.6em;
+		width: 80px;
+		height: 30px;
+	  }
 
 }

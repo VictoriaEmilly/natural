@@ -118,19 +118,38 @@
 
 @media (min-width:320px) and (max-width:600px) {
 
+    .principal h1{
+        font-size: 1em;
+    }
+
+    
+    .principal p{
+        font-size: 0.7em;
+    }
+
     .principal{
         margin-top: 100px;
         font-size: 18px;
     }
 
+    .catalogo h2{
+        font-size: 0.8em;
+    }
+
+   .catalogo h3{
+        font-size: 0.6em;
+    }
+
     .catalogo img{
-        width: 124px;
+        width: 224px;
         height: auto;
     }
 
     .catalogo a{
-        width: 72px;
+        width: 112px;
+        height: 30px;
     }
+
     .catalogo h3{
         font-size: 0.8em;
     }
