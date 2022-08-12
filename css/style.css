@@ -465,6 +465,7 @@ body {
 	text-align: center;
 	font-size: 0.5em;
 	padding: 0;
+	text-decoration: none;
 }
 .redes {
 	width: auto;
@@ -786,11 +787,16 @@ body {
 	.sessao4 h4 {
 		font-size: 1em;
 	}
+	
+	.sessao4 p{
+		margin:0 5px;
+	}
 
 	.btn-index-catalogo {
 		width: 160px;
 		height: 20px;
 		margin-bottom: 50px;
+		font-size:0.8em;
 	}
 
 	.rodape {
@@ -817,6 +823,8 @@ body {
 		display: flex;
 		flex-direction: row;
 		gap: 10px;
+		justify-content: center;
+		align-items: center;
 		justify-content: center;
 		align-items: center;
 	}

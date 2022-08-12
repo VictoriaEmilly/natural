@@ -66,6 +66,10 @@
     transition: all 0.6s ease;
 }
 
+.mobile-add-sacola{
+    display: none;
+}
+
 @media screen and (max-width:768px) {
 
     .titulo-principal h1{

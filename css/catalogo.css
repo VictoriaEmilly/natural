@@ -140,6 +140,14 @@
         font-size: 0.6em;
     }
 
+    .catalogo h2{
+        font-size: 0.8em;
+    }
+
+   .catalogo h3{
+        font-size: 0.6em;
+    }
+
     .catalogo img{
         width: 224px;
         height: auto;
@@ -149,6 +157,7 @@
         width: 112px;
         height: 30px;
     }
+
 
     .catalogo h3{
         font-size: 0.8em;
