@@ -460,12 +460,12 @@ body {
 }
 
 .sobre-mim h5{
-	font-size: 0.5em;
-	padding-bottom: 5px;
+	font-size: 0.5em!important;
+	padding-bottom: 5px!important;
 }
 .sobre-mim p{
-	font-size: 0.4em;
-	padding-bottom: 10px;
+	font-size: 0.5em!important;
+	padding-bottom: 10px!important;
 }
 
 
