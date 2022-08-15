@@ -459,6 +459,14 @@ body {
 	align-items: center;
 }
 
+.sobre-mim h5{
+	font-size: 0.5em;
+}
+.sobre-mim p{
+	font-size: 0.4em;
+}
+
+
 .rodape h5 {
 	font-size: 0.6em;
 	padding-bottom: 15px;
