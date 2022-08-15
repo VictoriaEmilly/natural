@@ -461,9 +461,11 @@ body {
 
 .sobre-mim h5{
 	font-size: 0.5em;
+	padding-bottom: 5px;
 }
 .sobre-mim p{
 	font-size: 0.4em;
+	padding-bottom: 10px;
 }
 
 
