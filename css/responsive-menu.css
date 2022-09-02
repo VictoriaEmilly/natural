@@ -204,6 +204,10 @@
 		width: 25vw;
 	}
 
+	.manual-nav{
+		margin-top: -7%;
+	}
+
 	.navegacao{
 		height: 11vh!important;
 		padding-right: 25%;
