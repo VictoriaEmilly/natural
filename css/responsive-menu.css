@@ -1,0 +1,313 @@
+
+
+@media (max-width:999px) {
+	.navegacao{
+		height: 14vh!important;
+		padding-right:35% ;
+	}
+
+    #menu-toggle:checked + .menu-btn span::after{
+		top: 0;
+        transform: rotate(90deg);
+    }
+    #menu-toggle:checked + .menu-btn span{
+        transform: rotate(45deg);
+
+    }
+    #menu-toggle:checked + .menu-btn span::before{
+		opacity: 0;
+    }
+
+    #menu-toggle:checked ~.menu{
+    	right: 0 !important;
+    }
+
+    .menu-btn span:before, .menu-btn span,.menu-btn span:after{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #5e7353;
+      transition-duration: .25s;
+    }
+
+    .menu-btn{
+        display: block;
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+		z-index: 5;
+        margin-top: 10px;    
+      }
+
+	.menu-btn span::before{
+		content: '';
+		top: -8px;
+	}
+
+	.menu-btn span::after{
+		content: '';
+		top: 8px;
+	}
+
+	.menu{
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		right: -100%;
+		background-color: #FAC9C5;
+		height: 100vh;
+		justify-content: center;
+		top: 0;
+      	margin: 0;
+      	padding: 80px 0;
+		width: 20vw;
+		transition-duration: .5s;
+	}
+
+	.menu li {
+		border-top: 1px solid #bebaba;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.menu li:last-child{
+		border-bottom: 1px solid #bebaba;
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	body {
+		font-size: 25px;
+	}
+
+	.principal {
+		margin-top: 130px;
+	}
+
+	.principal p {
+		font-size: 0.7em;
+	}
+
+	.header-main {
+		font-size: 0.6em;
+	}
+
+	.header-logo img {
+		width: 24px;
+	}
+
+	.usuario-compra img {
+		width: 18px;
+	}
+
+	.sessao2 {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sessao2-img {
+		width: 30%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.sessao2-img img {
+		width: 80%;
+		margin: 40px 0px 50px 40px;
+		padding: 0;
+	}
+
+	.sessao2-texto {
+		width: 65%;
+		padding-left: 30px;
+		align-items: center;
+	}
+
+	.sessao2-texto h1 {
+		font-size: 1em;
+		padding-bottom: 30px;
+	}
+
+	.mini-img {
+		gap: 15px;
+	}
+
+	.mini-img p {
+		font-size: 0.5em;
+		width: 28%;
+	}
+
+	.mini-img img {
+		width: 100%;
+	}
+
+	.btn-index-catalogo {
+		width: 180px;
+		height: 30px;
+		margin-top: 30px;
+		font-weight: bold;
+		gap: 5px;
+		padding: 5px;
+	}
+
+	.btn-index-catalogo a {
+		font-size: 0.7em;
+	}
+
+	.btn-index-catalogo img {
+		width: 12px;
+	}
+
+	.sessao3-imgs img {
+		width: 44px;
+	}
+
+	.rodape {
+		padding: 40px;
+		gap: 30px;
+		width: auto;
+	}
+
+	.rodape>div {
+		width: 33%;
+	}
+
+	.rodape h5 {
+		font-size: 0.5em;
+	}
+
+	.rodape p {
+		font-size: 0.4em;
+	}
+
+	.sessao3 {
+		padding: 60px;
+		margin: 10px 80px;
+	}
+	
+}
+
+
+@media (min-width:320px) and (max-width:600px) {
+
+	body {
+		font-size: 23px;
+	}
+
+	.menu{
+		width: 25vw;
+	}
+
+	.navegacao{
+		height: 5vh;
+		padding-right: 25%;
+	}
+
+	.usuario-compra{
+		padding-bottom: 3px
+	}
+
+	.usuario-compra img{
+		width: 18px;
+	}
+
+	.header-logo img {
+		width: 18px;
+	}
+
+	.slider {
+		height: 40%;
+	}
+
+	.slides {
+		height: 40%;
+	}
+
+	.principal {
+		margin-top: 160px;
+	}
+
+	.sessao2-texto {
+		margin: 0 20px;
+		padding: 0;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.sessao2-img {
+		display: none;
+	}
+
+	.sessao3 {
+		padding: 30px;
+		margin: 20px;
+	}
+
+	.sessao3 img {
+		width: 36px;
+	}
+
+	.sessao4 {
+		margin: 0;
+		padding: 0;
+	}
+
+	.sessao4 p{
+		margin:0 5px;
+	}
+
+	.sessao4 h4 {
+		font-size: 1em;
+	}
+	
+	.sessao4 p{
+		margin:0 5px;
+	}
+
+	.btn-index-catalogo {
+		width: 160px;
+		height: 20px;
+		margin-bottom: 50px;
+		font-size:0.8em;
+	}
+
+	.rodape {
+		padding: 20px;
+		width: auto;
+		flex-direction: column;
+	}
+
+	.rodape div, .rodape section {
+		width: 100%;
+	}
+
+	.rodape h5 {
+		font-size: 0.6em;
+		padding-bottom: 13px;
+	}
+
+	.rodape p {
+		font-size: 0.5em;
+		padding: 0;
+	}
+
+	.redes {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.redes img {
+		width: 24px;
+	}
+}

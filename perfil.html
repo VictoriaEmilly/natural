@@ -9,6 +9,7 @@
     <meta name="keywords" content="tecnologia, front-end, site" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/perfil.css" />
+    <link rel="stylesheet" href="./css/responsive-menu.css">
     <link rel="shortcut icon" href="imagens/index/natural-logo.png">
     <title>Natural - Perfil</title>
 </head>
@@ -18,60 +19,65 @@
         <div class="propaganda-header">
             <h6>Lorem Ipsum Dolor sit amet consectetur adipiscing! </h6>
         </div>
-        <div class="header-main">
+        <nav class="navegacao">
+
             <div class="header-logo">
                 <p><a href="index.html"><img src="./imagens/index/natural-logo.png"> NATURAL </a></p>
             </div>
-            <nav class="navegacao">
-                <ul class="menu">
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="catalogo.html"> Catálogo </a></li>
-                    <li><a href="contato.html">Contato </a></li>
-                </ul>
-                <ul class="usuario-compra">
-                    <li><a href="perfil.html"><img src="imagens/index/perfil-de-usuario.png"></a> </li>
-                    <li><a href="wishlist.html"><img src="imagens/index/coracao.png"></a></li>
-                    <li><a href="compras.html"><img src="imagens/index/sacola-de-compras-quadrada-com-alca.png"> 0</a>
-                    </li>
-                </ul>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-        </div>
 
+            <div class="mobile-menu">
+                <input type="checkbox" name="menu-toggle" id="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">
+                    <span></span>
+                </label>
+
+                <ul class="menu">
+                    <li><a href="index.html" onclick="closeNav()"> Home </a></li>
+                    <li><a href="catalogo.html" onclick="closeNav()"> Catálogo </a></li>
+                    <li><a href="contato.html" onclick="closeNav()">Contato </a></li>
+                </ul>
+            </div>
+
+            <ul class="usuario-compra">
+                <li><a href="perfil.html"><img src="imagens/index/perfil-de-usuario.png"></a> </li>
+                <li><a href="wishlist.html"><img src="imagens/index/coracao.png"></a></li>
+                <li><a href="compras.html"><img src="imagens/index/sacola-de-compras-quadrada-com-alca.png"> 0</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="principal">
         <form class="formulario">
-            <legend><h1>Faça login</h1></legend>
-                <input type="email" name="tMail" id="cMail" placeholder="E-mail" maxlenght="30" required>
-                <label for="cMail"></label>
-                <input type="password" name="tPass" id="cPass" inputmode="numeric" minlength="8" placeholder="Senha" required>
-                <label for="cPass"></label>
-                <a href=""><u>Esqueceu a senha?</u></a>
-                <div class="botao">
-                    <input type="submit" class="submit-btn" value="Enviar"></input>
-                </div>
-                <a href=""><u>Criar conta</u></a>
-            </form>
-        </div> 
+            <legend>
+                <h1>Faça login</h1>
+            </legend>
+            <input type="email" name="tMail" id="cMail" placeholder="E-mail" maxlenght="30" required>
+            <label for="cMail"></label>
+            <input type="password" name="tPass" id="cPass" inputmode="numeric" minlength="8" placeholder="Senha"
+                required>
+            <label for="cPass"></label>
+            <a href=""><u>Esqueceu a senha?</u></a>
+            <div class="botao">
+                <input type="submit" class="submit-btn" value="Enviar"></input>
+            </div>
+            <a href=""><u>Criar conta</u></a>
+        </form>
+        </div>
     </main>
 
     <footer class="rodape">
         <div class="sobre-empresa">
             <h5>Natural Cosméticos Ltda </h5>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
             </p>
         </div>
         <div>
             <h5>Contato e Informações</h5>
             <p> Lorem Ipsum dolor sit email naturalhelp@gmail.com ou pelo telefone: (01) 2345-6789</p>
-           
+
         </div>
         <div class="sobre-mim">
             <p>

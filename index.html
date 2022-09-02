@@ -8,6 +8,7 @@
     <meta name="author" content="Victoria Santos" />
     <meta name="keywords" content="tecnologia, front-end, site" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive-menu.css">
     <link rel="shortcut icon" href="imagens/index/natural-logo.png">
     <title>Natural - Home</title>
 </head>
@@ -17,29 +18,33 @@
         <div class="propaganda-header">
             <h6>Lorem Ipsum Dolor sit amet consectetur adipiscing! </h6>
         </div>
-        <div class="header-main">
+        <nav class="navegacao">
+  
             <div class="header-logo">
                 <p><a href="index.html"><img src="./imagens/index/natural-logo.png"> NATURAL </a></p>
             </div>
-            <nav class="navegacao">
+           
+                <div class="mobile-menu">
+                <input type="checkbox" name="menu-toggle" id="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">
+                    <span></span>
+                </label>
+
                 <ul class="menu">
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="catalogo.html"> Catálogo </a></li>
-                    <li><a href="contato.html">Contato </a></li>
+                    <li><a href="index.html" onclick="closeNav()"> Home </a></li>
+                    <li><a href="catalogo.html" onclick="closeNav()"> Catálogo </a></li>
+                    <li><a href="contato.html" onclick="closeNav()">Contato </a></li>
                 </ul>
+            </div>
+
                 <ul class="usuario-compra">
                     <li><a href="perfil.html"><img src="imagens/index/perfil-de-usuario.png"></a> </li>
                     <li><a href="wishlist.html"><img src="imagens/index/coracao.png"></a></li>
                     <li><a href="compras.html"><img src="imagens/index/sacola-de-compras-quadrada-com-alca.png"> 0</a>
                     </li>
                 </ul>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
             </nav>
-        </div>
+
     </header>
 
     <main class="principal">

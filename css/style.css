@@ -37,7 +37,7 @@ body {
 	flex-wrap: wrap;
 	height: auto;
 	top: 0;
-	z-index: 10;
+	z-index: 3;
 	background-image: linear-gradient(to right, #ffffff, #FAC9C5);
 	justify-content: space-evenly;
 	position: fixed;
@@ -62,33 +62,22 @@ body {
 	padding-top: 5px;
 }
 
-.header-main {
+.navegacao{
 	display: flex;
 	width: 100%;
 	align-items: center;
 	padding: 15px 15px 15px 25px;
 	text-align: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	font-size: 0.7em;
-}
-
-.header-logo {
-	width: 20%;
 }
 
 .header-logo a {
 	color: black;
 }
 
-.navegacao {
-	display: flex;
-	width: 80%;
-	justify-content: space-between;
-}
-
 .menu {
 	display: flex;
-	width: 80%;
 	justify-content: center;
 	align-items: center;
 	gap: 25px;
@@ -100,15 +89,15 @@ body {
 
 .menu a:hover{
 	color: #000;
-	border-bottom: 2px solid #556b2f;
 }
 
 .usuario-compra {
 	display: flex;
 	gap: 10px;
-	width: 32%;
+
 	justify-content: center;
 	align-items: center;
+
 }
 
 .usuario-compra a {
@@ -116,7 +105,7 @@ body {
 	font-size: 0.8em;
 }
 
-.mobile-menu {
+#menu-toggle,.menu-btn {
 	display: none;
 	cursor: pointer;
 }
@@ -487,362 +476,4 @@ body {
 	flex-wrap: nowrap;
 	flex-direction: row;
 	gap: 15px;
-}
-
-
-@media (max-width:999px) {
-
-	.navegacao {
-		display: flex;
-		width: 80%;
-		justify-content: flex-end;
-		position: relative;
-	}
-
-	.header-main {
-		justify-content: center;
-	}
-
-	.menu {
-		position: absolute;
-		right: 0;
-		top: 9vh;
-		width: 20vw;
-		height: 30vh;
-		background-color: #FAC9C5;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		transform: translateX(120%);
-		transition: transform 0.3s ease-in;
-		margin: 0;
-	}
-
-	.mobile-menu {
-		display: block;
-		cursor: pointer;
-	}
-
-	.mobile-menu div {
-		width: 25px;
-		height: 2px;
-		background: #556b2f;
-		margin: 8px;
-		transition: 0.3s;
-	}
-
-	.menu.active {
-		transform: translateX(10%);
-	}
-
-	.mobile-menu.active .line1 {
-		transform: rotate(-45deg) translate(-8px, 8px);
-	}
-
-	.mobile-menu.active .line2 {
-		opacity: 0;
-	}
-
-	.mobile-menu.active .line3 {
-		transform: rotate(45deg) translate(-5px, -7px);
-	}
-}
-
-@media (max-width: 768px) {
-	body {
-		font-size: 25px;
-	}
-
-	.principal {
-		margin-top: 130px;
-	}
-
-	.principal p {
-		font-size: 0.7em;
-	}
-
-	.header-main {
-		font-size: 0.6em;
-	}
-
-	.header-logo img {
-		width: 24px;
-	}
-
-	.usuario-compra img {
-		width: 18px;
-	}
-
-	.sessao2 {
-		justify-content: center;
-		align-items: center;
-	}
-
-	.sessao2-img {
-		width: 30%;
-		padding: 0;
-		margin: 0;
-	}
-
-	.sessao2-img img {
-		width: 80%;
-		margin: 40px 0px 50px 40px;
-		padding: 0;
-	}
-
-	.sessao2-texto {
-		width: 65%;
-		padding-left: 30px;
-		align-items: center;
-	}
-
-	.sessao2-texto h1 {
-		font-size: 1em;
-		padding-bottom: 30px;
-	}
-
-	.mini-img {
-		gap: 15px;
-	}
-
-	.mini-img p {
-		font-size: 0.5em;
-		width: 28%;
-
-	}
-
-	.mini-img img {
-		width: 100%;
-	}
-
-
-	.btn-index-catalogo {
-		width: 180px;
-		height: 30px;
-		margin-top: 30px;
-		font-weight: bold;
-		gap: 5px;
-		padding: 5px;
-	}
-
-
-	.btn-index-catalogo a {
-		font-size: 0.7em;
-	}
-
-	.btn-index-catalogo img {
-		width: 12px;
-	}
-
-	.sessao3-imgs img {
-		width: 44px;
-	}
-
-	.rodape {
-		padding: 40px;
-		gap: 30px;
-		width: auto;
-	}
-
-	.rodape>div {
-		width: 33%;
-	}
-
-	.rodape h5 {
-		font-size: 0.5em;
-	}
-
-	.rodape p {
-		font-size: 0.4em;
-	}
-
-	.sessao3 {
-		padding: 60px;
-		margin: 10px 80px;
-	}
-
-
-}
-
-@media (min-width:320px) and (max-width:600px) {
-
-	body {
-		font-size: 23px;
-	}
-
-	.header-logo {
-		width: 20%;
-		margin-top: 15px;
-		padding: 0;
-		height: 20%;
-	}
-
-	.navegacao {
-		align-items: center;
-		justify-content: center;
-		padding: 0;
-		width: 70%;
-		position: relative;
-	}
-
-	.usuario-compra{
-		padding-bottom: 3px
-	}
-
-	.usuario-compra img{
-		width: 18px;
-	}
-
-	.header-main{
-		width: 100%;
-		margin: 6px 0;
-		padding: 0;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.menu {
-		width: 50%;
-		height: 30vh;
-		margin-left: 15px;
-		position: absolute;
-		padding: 20px;
-	}
-
-	.mobile-menu div {
-		width: 16px;
-		height: 2px;
-		margin: 5px;
-		position: relative;
-	}
-
-	.mobile-menu {
-		margin: 0 15px;
-	}
-
-	.mobile-menu.active .line1 {
-		transform: rotate(-50deg) translate(-5px, 6px);
-	}
-
-	.mobile-menu.active .line2 {
-		opacity: 0;
-	}
-
-	.mobile-menu.active .line3 {
-		transform: rotate(50deg) translate(-4px, -5px);
-	}
-
-	.cabecalho {
-		margin: 0;
-	}
-
-	.header-logo {
-		padding: 0;
-		margin-bottom: 10px;
-		width: 30%;
-	}
-
-	.header-logo img {
-		width: 18px;
-	}
-
-	.usuario-compra {
-		margin-left: 40%;
-		width: 60%;
-		margin-top: 13px;
-	}
-
-	.slider {
-		height: 40%;
-	}
-
-	.slides {
-		height: 40%;
-	}
-
-	.manual-nav {
-		margin-top: -7.5%;
-	}
-
-	.principal {
-		margin-top: 160px;
-	}
-
-	.sessao2-texto {
-		margin: 0 20px;
-		padding: 0;
-		flex-wrap: wrap;
-		width: 100%;
-	}
-
-	.sessao2-img {
-		display: none;
-	}
-
-	.sessao3 {
-		padding: 30px;
-		margin: 20px;
-	}
-
-	.sessao3 img {
-		width: 36px;
-	}
-
-	.sessao4 {
-		margin: 0;
-		padding: 0;
-	}
-
-	.sessao4 p{
-		margin:0 5px;
-	}
-
-	.sessao4 h4 {
-		font-size: 1em;
-	}
-	
-	.sessao4 p{
-		margin:0 5px;
-	}
-
-	.btn-index-catalogo {
-		width: 160px;
-		height: 20px;
-		margin-bottom: 50px;
-		font-size:0.8em;
-	}
-
-	.rodape {
-		padding: 20px;
-		width: auto;
-		flex-direction: column;
-	}
-
-	.rodape div, .rodape section {
-		width: 100%;
-	}
-
-	.rodape h5 {
-		font-size: 0.6em;
-		padding-bottom: 13px;
-	}
-
-	.rodape p {
-		font-size: 0.5em;
-		padding: 0;
-	}
-
-	.redes {
-		display: flex;
-		flex-direction: row;
-		gap: 10px;
-		justify-content: center;
-		align-items: center;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.redes img {
-		width: 24px;
-	}
 }

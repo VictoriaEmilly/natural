@@ -2,167 +2,169 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Victoria Santos" />
-    <meta name="keywords" content="tecnologia, front-end, site" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/catalogo.css" />
-    <link rel="shortcut icon" href="imagens/index/natural-logo.png">
-    <title>Natural - Catálogo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Victoria Santos" />
+  <meta name="keywords" content="tecnologia, front-end, site" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/catalogo.css" />
+  <link rel="stylesheet" href="./css/responsive-menu.css">
+  <link rel="shortcut icon" href="imagens/index/natural-logo.png">
+  <title>Natural - Catálogo</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="propaganda-header">
-            <h6>Lorem Ipsum Dolor sit amet consectetur adipiscing! </h6>
-        </div>
-        <div class="header-main">
-            <div class="header-logo">
-                <p><a href="index.html"><img src="./imagens/index/natural-logo.png"> NATURAL </a></p>
-            </div>
-            <nav class="navegacao">
-                <ul class="menu">
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="catalogo.html"> Catálogo </a></li>
-                    <li><a href="contato.html">Contato </a></li>
-                </ul>
-                <ul class="usuario-compra">
-                    <li><a href="perfil.html"><img src="imagens/index/perfil-de-usuario.png"></a> </li>
-                    <li><a href="wishlist.html"><img src="imagens/index/coracao.png"></a></li>
-                    <li><a href="compras.html"><img src="imagens/index/sacola-de-compras-quadrada-com-alca.png"> 0</a>
-                    </li>
-                </ul>
-                <div class="mobile-menu">
-                  <div class="line1"></div>
-                  <div class="line2"></div>
-                  <div class="line3"></div>
-              </div>
-            </nav>
-        </div>
+  <header class="cabecalho">
+    <div class="propaganda-header">
+      <h6>Lorem Ipsum Dolor sit amet consectetur adipiscing! </h6>
+    </div>
+    <nav class="navegacao">
 
-    </header>
+      <div class="header-logo">
+        <p><a href="index.html"><img src="./imagens/index/natural-logo.png"> NATURAL </a></p>
+      </div>
 
-    <main class="principal">
-        <section class="catalogo-texto">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-      
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.</p>
-          </section>
-      
-          <section class="catalogo">
-            <div onmouseover="mostrarBtn('botao-sac','block')" onmouseout="mostrarBtn('botao-sac','none')">
-              <img src="./imagens/catalogo/soap.jpg" alt="produto 1-sabonete">
-              <div><a href="" id="botao-sac">Adicionar à sacola</a></div>
-              <h2> R$ 20</h2>
-              <h3> Lorem ipsum </h3>
-              <div class="favoritar">
-                <img id="icone" src="imagens/index/coracao.png" onclick="trocar()">
-              </div>
-            </div>
-      
-            <div onmouseover="mostrarBtn('botao-sac2','block')" onmouseout="mostrarBtn('botao-sac2','none')">
-              <img src="./imagens/catalogo/essential-oil.jpg" alt="produto 2-oléo essencial">
-              <div><a href="" id="botao-sac2">Adicionar à sacola</a></div>
-              <h2> R$ 100</h2>
-              <h3> Lorem ipsum </h3>
-              <div class="favoritar">
-                <img id="icone2" src="imagens/index/coracao.png" onclick="trocar2()">
-              </div>
-            </div>
-      
-            <div onmouseover="mostrarBtn('botao-sac3','block')" onmouseout="mostrarBtn('botao-sac3','none')">
-              <img src="./imagens/catalogo/bath-oil.jpg" alt="produto 3-óleo de banho">
-              <div><a href="" id="botao-sac3">Adicionar à sacola</a></div>
-              <h2> R$ 70</h2>
-              <h3> Lorem ipsum </h3>
-              <div class="favoritar">
-                <img id="icone3" src="imagens/index/coracao.png" onclick="trocar3()">
-              </div>
-            </div>
-      
-            <div onmouseover="mostrarBtn('botao-sac4','block')" onmouseout="mostrarBtn('botao-sac4','none')">
-              <img src="./imagens/catalogo/essential-oils.jpg" alt="produto 4-óleo essencial">
-              <div><a href="" id="botao-sac4">Adicionar à sacola</a></div>
-              <h2> R$ 120</h2>
-              <h3> Lorem ipsum </h3>
-              <div class="favoritar">
-                <img id="icone4" src="imagens/index/coracao.png" onclick="trocar4()">
-              </div>
-            </div>
-      
-            <div onmouseover="mostrarBtn('botao-sac5','block')" onmouseout="mostrarBtn('botao-sac5','none')">
-              <img src="./imagens/catalogo/soap2.jpg" alt="produto 5-sabonete">
-              <div><a href="" id="botao-sac5">Adicionar à sacola</a></div>
-              <h2> R$ 40</h2>
-              <h3> Lorem ipsum </h3>
-              <div class="favoritar">
-                <img id="icone5" src="imagens/index/coracao.png" onclick="trocar5()">
-              </div>
-            </div>
-      
-            <div onmouseover="mostrarBtn('botao-sac6','block')" onmouseout="mostrarBtn('botao-sac6','none')">
-              <img src="./imagens/catalogo/oil.jpg" alt="produto 6-óleo">
-              <div><a href="" id="botao-sac6">Adicionar à sacola</a></div>
-              <h2> R$ 50</h2>
-              <h3> Lorem ipsum </h3>
-              <div class="favoritar">
-                <img id="icone6" src="imagens/index/coracao.png" onclick="trocar6()">
-              </div>
-            </div>
-      
-            <div onmouseover="mostrarBtn('botao-sac7','block')" onmouseout="mostrarBtn('botao-sac7','none')">
-              <img src="./imagens/catalogo/perfum.jpg" alt="produto 7-perfume">
-              <div><a href="" id="botao-sac7">Adicionar à sacola</a></div>
-              <h2> R$ 200</h2>
-              <h3> Lorem ipsum </h3>
-              <div class="favoritar">
-                <img id="icone7" src="imagens/index/coracao.png" onclick="trocar7()">
-              </div>
-            </div>
-      
-            <div onmouseover="mostrarBtn('botao-sac8','block')" onmouseout="mostrarBtn('botao-sac8','none')">
-              <img src="./imagens/catalogo/glass.jpg" alt="produto 8-creme de pele">
-              <div><a href="" id="botao-sac8">Adicionar à sacola</a></div>
-              <h2> R$ 75</h2>
-              <h3> Lorem ipsum </h3>
-              <div class="favoritar">
-                <img id="icone8" src="imagens/index/coracao.png" onclick="trocar8()">
-              </div>
-            </div>
-          </section>
-        </main>
-      
-        <footer class="rodape">
-            <div class="sobre-empresa">
-                <h5>Natural Cosméticos Ltda </h5>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-            </div>
-            <div>
-                <h5>Contato e Informações</h5>
-                <p> Lorem Ipsum dolor sit email naturalhelp@gmail.com ou pelo telefone: (01) 2345-6789</p>
-               
-            </div>
-            <div class="sobre-mim">
-                <p>
-                <h5>Projeto por Victoria Santos</h5>
-                <div class="redes">
-                    <a href="http://instagram.com/vick_emilly" target="_blank"> <img src="imagens/contato/instagram.png">
-                    </a>
-                    <a href="http://github.com/VictoriaEmilly" target="_blank"> <img src="imagens/contato/github.png"> </a>
-                    <a href="https://www.linkedin.com/in/victoria-emilly-ferreira-santos-2b729519a/" target="_blank"><img
-                            src="imagens/contato/linkedin.png"></a>
-                </div>
-                </p>
-            </div>
-        </footer>
-        <script src="./javascript/mobile-nav.js"></script>
-        <script src="./javascript/script.js"></script>
+      <div class="mobile-menu">
+        <input type="checkbox" name="menu-toggle" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+          <span></span>
+        </label>
+
+        <ul class="menu">
+          <li><a href="index.html" onclick="closeNav()"> Home </a></li>
+          <li><a href="catalogo.html" onclick="closeNav()"> Catálogo </a></li>
+          <li><a href="contato.html" onclick="closeNav()">Contato </a></li>
+        </ul>
+      </div>
+
+      <ul class="usuario-compra">
+        <li><a href="perfil.html"><img src="imagens/index/perfil-de-usuario.png"></a> </li>
+        <li><a href="wishlist.html"><img src="imagens/index/coracao.png"></a></li>
+        <li><a href="compras.html"><img src="imagens/index/sacola-de-compras-quadrada-com-alca.png"> 0</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="principal">
+    <section class="catalogo-texto">
+      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+    </section>
+
+    <section class="catalogo">
+      <div onmouseover="mostrarBtn('botao-sac','block')" onmouseout="mostrarBtn('botao-sac','none')">
+        <img src="./imagens/catalogo/soap.jpg" alt="produto 1-sabonete">
+        <div><a href="" id="botao-sac">Adicionar à sacola</a></div>
+        <h2> R$ 20</h2>
+        <h3> Lorem ipsum </h3>
+        <div class="favoritar">
+          <img id="icone" src="imagens/index/coracao.png" onclick="trocar()">
+        </div>
+      </div>
+
+      <div onmouseover="mostrarBtn('botao-sac2','block')" onmouseout="mostrarBtn('botao-sac2','none')">
+        <img src="./imagens/catalogo/essential-oil.jpg" alt="produto 2-oléo essencial">
+        <div><a href="" id="botao-sac2">Adicionar à sacola</a></div>
+        <h2> R$ 100</h2>
+        <h3> Lorem ipsum </h3>
+        <div class="favoritar">
+          <img id="icone2" src="imagens/index/coracao.png" onclick="trocar2()">
+        </div>
+      </div>
+
+      <div onmouseover="mostrarBtn('botao-sac3','block')" onmouseout="mostrarBtn('botao-sac3','none')">
+        <img src="./imagens/catalogo/bath-oil.jpg" alt="produto 3-óleo de banho">
+        <div><a href="" id="botao-sac3">Adicionar à sacola</a></div>
+        <h2> R$ 70</h2>
+        <h3> Lorem ipsum </h3>
+        <div class="favoritar">
+          <img id="icone3" src="imagens/index/coracao.png" onclick="trocar3()">
+        </div>
+      </div>
+
+      <div onmouseover="mostrarBtn('botao-sac4','block')" onmouseout="mostrarBtn('botao-sac4','none')">
+        <img src="./imagens/catalogo/essential-oils.jpg" alt="produto 4-óleo essencial">
+        <div><a href="" id="botao-sac4">Adicionar à sacola</a></div>
+        <h2> R$ 120</h2>
+        <h3> Lorem ipsum </h3>
+        <div class="favoritar">
+          <img id="icone4" src="imagens/index/coracao.png" onclick="trocar4()">
+        </div>
+      </div>
+
+      <div onmouseover="mostrarBtn('botao-sac5','block')" onmouseout="mostrarBtn('botao-sac5','none')">
+        <img src="./imagens/catalogo/soap2.jpg" alt="produto 5-sabonete">
+        <div><a href="" id="botao-sac5">Adicionar à sacola</a></div>
+        <h2> R$ 40</h2>
+        <h3> Lorem ipsum </h3>
+        <div class="favoritar">
+          <img id="icone5" src="imagens/index/coracao.png" onclick="trocar5()">
+        </div>
+      </div>
+
+      <div onmouseover="mostrarBtn('botao-sac6','block')" onmouseout="mostrarBtn('botao-sac6','none')">
+        <img src="./imagens/catalogo/oil.jpg" alt="produto 6-óleo">
+        <div><a href="" id="botao-sac6">Adicionar à sacola</a></div>
+        <h2> R$ 50</h2>
+        <h3> Lorem ipsum </h3>
+        <div class="favoritar">
+          <img id="icone6" src="imagens/index/coracao.png" onclick="trocar6()">
+        </div>
+      </div>
+
+      <div onmouseover="mostrarBtn('botao-sac7','block')" onmouseout="mostrarBtn('botao-sac7','none')">
+        <img src="./imagens/catalogo/perfum.jpg" alt="produto 7-perfume">
+        <div><a href="" id="botao-sac7">Adicionar à sacola</a></div>
+        <h2> R$ 200</h2>
+        <h3> Lorem ipsum </h3>
+        <div class="favoritar">
+          <img id="icone7" src="imagens/index/coracao.png" onclick="trocar7()">
+        </div>
+      </div>
+
+      <div onmouseover="mostrarBtn('botao-sac8','block')" onmouseout="mostrarBtn('botao-sac8','none')">
+        <img src="./imagens/catalogo/glass.jpg" alt="produto 8-creme de pele">
+        <div><a href="" id="botao-sac8">Adicionar à sacola</a></div>
+        <h2> R$ 75</h2>
+        <h3> Lorem ipsum </h3>
+        <div class="favoritar">
+          <img id="icone8" src="imagens/index/coracao.png" onclick="trocar8()">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="sobre-empresa">
+      <h5>Natural Cosméticos Ltda </h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam.
+      </p>
+    </div>
+    <div>
+      <h5>Contato e Informações</h5>
+      <p> Lorem Ipsum dolor sit email naturalhelp@gmail.com ou pelo telefone: (01) 2345-6789</p>
+
+    </div>
+    <div class="sobre-mim">
+      <p>
+      <h5>Projeto por Victoria Santos</h5>
+      <div class="redes">
+        <a href="http://instagram.com/vick_emilly" target="_blank"> <img src="imagens/contato/instagram.png">
+        </a>
+        <a href="http://github.com/VictoriaEmilly" target="_blank"> <img src="imagens/contato/github.png"> </a>
+        <a href="https://www.linkedin.com/in/victoria-emilly-ferreira-santos-2b729519a/" target="_blank"><img
+            src="imagens/contato/linkedin.png"></a>
+      </div>
+      </p>
+    </div>
+  </footer>
+  <script src="./javascript/mobile-nav.js"></script>
+  <script src="./javascript/script.js"></script>
 </body>
 
 </html>
