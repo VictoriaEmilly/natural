@@ -205,8 +205,13 @@
 	}
 
 	.navegacao{
-		height: 5vh;
+		height: 10vh!important;
 		padding-right: 25%;
+		border: 1px solid red;
+	}
+
+	.menu-btn{
+		margin-top: 0!important;
 	}
 
 	.usuario-compra{
